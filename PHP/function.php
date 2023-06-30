@@ -53,7 +53,7 @@ function login()
         $row = mysqli_fetch_assoc($result);
         if ($password == $row['password']) {
             // Perform the login process
-            // Add your code here for logging in the user
+            
             echo "Login successful";
             $_SESSION["login"] = true;
             $_SESSION["id"] = $row["id"];
